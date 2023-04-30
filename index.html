@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/todo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div class="container bg-white text-center my-5 rounded-2">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 m-auto ">
+                <div class=" d-flex justify-content-center w-75 mx-auto ">
+                    <h1 class="my-2">To Do List</h1>
+                </div>
+                <div class="row g-2 my-4">
+                    <div class="col-md-8">
+                        <div >
+                            <input type="text" class="form-control" placeholder="Enter a task here"  id="inputTodo">
+                       <p class="text-danger d-none" id="check" >You must enter your task</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn bg-primary text-white px-4 " id="addID" onclick="addTask()">Add</button>
+                        <button class="btn bg-primary text-white px-4 d-none" id="saveID" onclick="updatedTasks()" >Save</button>
+                  
+
+          
+                    </div>
+
+
+                </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <th>No.</th>
+                            <th>To Do item</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </thead>
+                        <tbody id="tBody">
+              
+    
+                        </tbody>
+                    </table>
+        <button class="btn bg-primary text-white my-2" onclick="clearAll()" >Clear All</button>
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/index.js"></script>
+</html>
